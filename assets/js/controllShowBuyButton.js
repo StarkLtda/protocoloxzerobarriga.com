@@ -24,6 +24,7 @@ function Timer (callback, delay) {
 
   this.resume = function () {
     start = new Date();
+    console.log(delay)
     timer = setTimeout(function () {
       callback.apply(
         self,
